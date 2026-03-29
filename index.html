@@ -860,8 +860,7 @@ async function runAI() {
       .replace(/
 
 /g,'<br><br>').replace(/
-/g,'<br>')
-      .replace(/(КАРТИНА|СИГНАЛЫ|ВЫВОД):/g,'<span style="color:var(--accent);font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.1em">$1:</span>');
+/g,'<br>');
   } catch(e) {
     out.className='sp-ai-out'; out.textContent='Ошибка: '+e.message;
   } finally {
